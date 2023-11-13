@@ -1,6 +1,150 @@
 :root {
-  --web-studio-grey: #2f303a;
+  --web-studio-black: #212121;
   --web-studio-blue: #2196f3;
   --web-studio-white: #ffffff;
   --web-studio-white2: #f5f4fa;
+  --web-studio-gray: #757575;
+}
+body {
+  color: var(--web-studio-black);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.header-web {
+  color: var(--web-studio-blue);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+}
+.header-studio {
+  color: var(--web-studio-black);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+}
+.nav-list-link {
+  color: var(--web-studio-black);
+  font-weight: 500;
+}
+.nav-list-link:hover {
+  color: var(--web-studio-blue);
+}
+.list-link {
+  color: var(--web-studio-black);
+  font-weight: 500;
+}
+.list-link:hover {
+  color: var(--web-studio-blue);
+}
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--web-studio-white);
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4%;
+  text-transform: uppercase;
+}
+.hero-btn {
+  color: var(--web-studio-white);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9%;
+
+  width: 216px;
+  height: 50px;
+  background-color: var(--web-studio-blue);
+  border: 4px;
+}
+.main-section-title {
+  color: var(--web-studio-black);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-section-text {
+  color: var(--web-studio-gray);
+  line-height: 1.7%;
+}
+.features-title {
+  color: var(--web-studio-black);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.features-img {
+  width: 370px;
+  height: 294px;
+}
+.features-list {
+  display: flex;
+}
+.team-title {
+  color: var(--web-studio-black);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.team {
+  background: var(--web-studio-white2);
+}
+.team-info {
+  width: 270px;
+  height: 368px;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+}
+.team-img {
+  width: 270px;
+  height: 260px;
+}
+.team-name {
+  color: var(--web-studio-black);
+  text-align: center;
+  font-weight: 500;
+}
+.team-prof {
+  color: var(--web-studio-gray);
+  text-align: center;
+}
+.team-list {
+  display: flex;
+}
+.footer {
+  background: #2f303a;
+}
+.footer-web {
+  color: var(--web-studio-blue);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+}
+.footer-studio {
+  color: var(--web-studio-black);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+}
+.footer-adress {
+  color: var(--web-studio-white);
+  line-height: 1.7%;
+}
+.footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7%;
+}
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7%;
 }
