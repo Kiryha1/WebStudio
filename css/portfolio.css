@@ -12,6 +12,7 @@ body {
   font-style: normal;
   line-height: normal;
   font-weight: 500;
+  letter-spacing: 0.48px;
 }
 ul {
   list-style-type: none;
@@ -19,78 +20,42 @@ ul {
 a {
   text-decoration: none;
 }
-.header-web {
+.header-logo {
   color: var(--web-studio-blue);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
-.header-studio {
+.header-span {
   color: var(--web-studio-black);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
 .nav-list-link {
   color: var(--web-studio-black);
-  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.28px;
 }
 .nav-list-link:hover {
   color: var(--web-studio-blue);
 }
 .list-link {
   color: var(--web-studio-black);
+  font-size: 14px;
+  letter-spacing: 0.28px;
 }
 .list-link:hover {
   color: var(--web-studio-blue);
 }
-.con-list {
+.main-btn {
   color: var(--web-studio-black);
   text-align: center;
-  line-height: 1.6%;
+  line-height: 1.6;
   border: 4px;
   background-color: var(--web-studio-white2);
 }
-.con-list {
-  display: flex;
-}
-.main-btn-1 {
-  width: 73px;
-  height: 38px;
-}
-.main-btn-2 {
-  width: 125px;
-  height: 38px;
-}
-.main-btn-3 {
-  width: 112px;
-  height: 38px;
-}
-.main-btn-4 {
-  width: 103px;
-  height: 38px;
-}
-.main-btn-5 {
-  width: 130px;
-  height: 38px;
-}
-.main-btn-1:hover {
-  color: var(--web-studio-white);
-  background-color: var(--web-studio-blue);
-}
-.main-btn-2:hover {
-  color: var(--web-studio-white);
-  background-color: var(--web-studio-blue);
-}
-.main-btn-3:hover {
-  color: var(--web-studio-white);
-  background-color: var(--web-studio-blue);
-}
-.main-btn-4:hover {
-  color: var(--web-studio-white);
-  background-color: var(--web-studio-blue);
-}
-.main-btn-5:hover {
+.main-btn:hover {
   color: var(--web-studio-white);
   background-color: var(--web-studio-blue);
 }
@@ -98,7 +63,7 @@ a {
   width: 370px;
   height: 404px;
   border: 1px solid #eee;
-  background: var(--web-studio-white);
+  background-color: var(--web-studio-white);
 }
 .info-img {
   width: 370px;
@@ -108,38 +73,42 @@ a {
   color: var(--web-studio-black);
   font-size: 18px;
   font-weight: 700;
-  line-height: 2%;
+  line-height: 2;
+  letter-spacing: 1.08px;
 }
 .info-text {
   color: var(--web-studio-gray);
   font-weight: 400;
-  line-height: 1.9%;
+  line-height: 1.9;
 }
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
 }
-.footer-web {
+.footer-logo {
   color: var(--web-studio-blue);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
-.footer-studio {
+.footer-span {
   color: var(--web-studio-white);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
 .footer-adress {
   color: var(--web-studio-white);
   font-size: 14px;
-  line-height: 1.7%;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
 }
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
-  line-height: 1.7%;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
 }
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
-  line-height: 1.7%;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
 }
