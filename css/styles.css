@@ -19,21 +19,36 @@ ul {
 a {
   text-decoration: none;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
 .container {
-  width: 1630px;
+  width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
 .header-logo {
   color: var(--web-studio-blue);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   padding-bottom: 25px;
 }
 .header-span {
   color: var(--web-studio-black);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   padding-bottom: 25px;
@@ -69,7 +84,7 @@ a {
   font-weight: 900;
   line-height: 1.4;
   text-transform: uppercase;
-  padding: 200px 0 30px ;
+  padding: 200px 0 30px;
 }
 .hero-btn {
   color: var(--web-studio-white);
@@ -113,7 +128,7 @@ a {
   display: flex;
 }
 .team {
-  margin-top: 94px;
+  margin-top: 65px;
   padding-top: 94px;
 }
 .team-title {
@@ -149,13 +164,15 @@ a {
 .team-list {
   display: flex;
 }
+.team-info {
+  margin-bottom: 94px;
+}
 .footer {
   background-color: #2f303a;
-  margin-top: 94px;
 }
 .footer-logo {
   color: var(--web-studio-blue);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   padding-top: 60px;
@@ -163,10 +180,10 @@ a {
 }
 .footer-span {
   color: var(--web-studio-white);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-    padding-top: 60px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 .footer-adress {
@@ -184,5 +201,5 @@ a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
