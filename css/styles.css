@@ -35,9 +35,12 @@ ol {
   margin: 0;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.header {
+  padding: 24px 0 25px;
 }
 .header-logo {
   color: var(--web-studio-blue);
@@ -75,7 +78,7 @@ ol {
 }
 .hero {
   background-color: #2f303a;
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 .hero-title {
   color: var(--web-studio-white);
@@ -84,7 +87,7 @@ ol {
   font-weight: 900;
   line-height: 1.4;
   text-transform: uppercase;
-  padding: 200px 0 30px;
+  margin-bottom: 30px;
 }
 .hero-btn {
   color: var(--web-studio-white);
@@ -112,23 +115,26 @@ ol {
   color: var(--web-studio-gray);
   line-height: 1.7;
 }
+.features {
+  padding-bottom: 94px;
+}
 .features-title {
   color: var(--web-studio-black);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .features-img {
   width: 370px;
   height: 294px;
-  padding-right: 30px;
 }
 .features-list {
   display: flex;
 }
 .team {
-  margin-top: 65px;
+  background: var(--web-studio-white2);
+  padding-bottom: 94px;
   padding-top: 94px;
 }
 .team-title {
@@ -136,10 +142,10 @@ ol {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.team {
-  background: var(--web-studio-white2);
+.team-list-item {
+  padding-bottom: 30px;
 }
 .team-info {
   width: 270px;
@@ -155,7 +161,7 @@ ol {
   color: var(--web-studio-black);
   text-align: center;
   font-weight: 500;
-  padding: 30px 0 10px;
+  margin: 30px 0 10px;
 }
 .team-prof {
   color: var(--web-studio-gray);
@@ -164,42 +170,33 @@ ol {
 .team-list {
   display: flex;
 }
-.team-info {
-  margin-bottom: 94px;
-}
 .footer {
   background-color: #2f303a;
+  padding: 60px 0 ;
 }
 .footer-logo {
   color: var(--web-studio-blue);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-span {
   color: var(--web-studio-white);
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
 .footer-adress {
   color: var(--web-studio-white);
   line-height: 1.7;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
-  margin-bottom: 60px;
 }
