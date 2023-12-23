@@ -73,6 +73,10 @@ ol {
 .nav-list-link:hover {
   color: var(--web-studio-blue);
 }
+.contact-list {
+  display: flex;
+  gap: 50px;
+}
 .contact-list-link {
   color: var(--web-studio-gray);
   font-size: 14px;
@@ -97,10 +101,12 @@ ol {
   background-color: var(--web-studio-white2);
   border: none;
   border-radius: 4px;
+  padding: 6px 25px;
 }
 .main-btn:hover {
   color: var(--web-studio-white);
   background-color: var(--web-studio-blue);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 .main-list {
   margin: 50px 0 0;
@@ -124,7 +130,8 @@ ol {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  padding-left: 24px;
+  margin: 20px 0 4px;
+  padding: 0 24px;
 }
 .info-text {
   color: var(--web-studio-gray);
