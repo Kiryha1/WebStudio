@@ -46,6 +46,7 @@ ol {
 }
 .header {
   padding: 24px 0 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 .header-logo {
   color: var(--web-studio-blue);
