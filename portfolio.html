@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,30 +18,32 @@
   </head>
   <body>
     <header class="header">
-      <a class="header-logo" href="./index.html">Web<span class="header-span">Studio</span></a>
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="#">Студія</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="#">Портфоліо</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link" href="#">Контакти</a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="list-item">
-            <a class="list-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="list-item">
-            <a class="list-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="header-logo" href="./index.html"
+          >Web<span class="header-span">Studio</span></a
+        >
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Студія</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Портфоліо</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact-list">
+          <a class="contact-list-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="contact-list-link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </div>
+      </div>
     </header>
     <main class="main">
       <div class="container">
@@ -48,6 +53,7 @@
         <button class="main-btn" type="button">Дизайн</button>
         <button class="main-btn" type="button">Маркетинг</button>
       </div>
+      <div class="container">
       <ul class="main-list">
         <li class="main-list-item">
           <article class="info">
@@ -129,12 +135,21 @@
           </article>
         </li>
       </ul>
+    </div>
     </main>
     <footer class="footer">
-      <a class="footer-logo" href="./index.html">Web<span class="footer-span">Studio</span></a>
-      <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
-      <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-      <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+      <div class="container">
+        <a class="footer-logo" href="./index.html"
+          >Web<span class="footer-span">Studio</span></a
+        >
+        <address class="address">
+          <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
+          <a class="footer-mail" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+          <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

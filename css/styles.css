@@ -73,7 +73,7 @@ ol {
   gap: 50px;
 }
 .contact-list-link {
-  color: var(--web-studio-black);
+  color: var(--web-studio-gray);
   font-weight: 500;
 }
 .contact-list-link:hover {
@@ -202,13 +202,11 @@ ol {
 .footer-adress {
   color: var(--web-studio-white);
   line-height: 1.7;
-  margin-bottom: 9px;
 }
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
-  margin-bottom: 9px;
 }
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
