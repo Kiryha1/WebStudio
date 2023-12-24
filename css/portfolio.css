@@ -116,9 +116,9 @@ ol {
   flex-wrap: wrap;
 }
 .info {
+  width: 370px;
   border: 1px solid #eee;
   background-color: var(--web-studio-white);
-  max-width: 370px;
 }
 .info-img {
   width: 370px;
