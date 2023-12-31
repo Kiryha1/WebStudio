@@ -115,6 +115,9 @@ ol {
   gap: 30px;
   flex-wrap: wrap;
 }
+.main-list-item {
+  flex-basis: calc((100% - 60px)/3);
+}
 .info {
   width: 370px;
   border: 1px solid #eee;
