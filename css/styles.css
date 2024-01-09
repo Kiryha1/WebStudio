@@ -46,7 +46,7 @@ ol {
 }
 .header {
   padding: 24px 0 25px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 .header-logo {
   color: var(--web-studio-blue);
@@ -114,6 +114,29 @@ ol {
 .features-list {
   display: flex;
   gap: 30px;
+}
+.features-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.features-list-item:first-child::before {
+  background-image: url("../images/antenna.svg");
+}
+.features-list-item:nth-child(2)::before {
+  background-image: url('../images/clock.svg');
+}
+.features-list-item:nth-child(3)::before {
+  background-image: url('../images/diagram.svg');
+}
+.features-list-item:last-child::before {
+  background-image: url('../images/astronaut.svg');
 }
 .features-list-item {
   max-width: 270px;
