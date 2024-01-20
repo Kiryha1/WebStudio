@@ -83,6 +83,15 @@ ol {
 .hero {
   background-color: #2f303a;
   padding: 200px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .hero-title {
   color: var(--web-studio-white);
