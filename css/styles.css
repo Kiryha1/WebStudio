@@ -182,10 +182,30 @@ ol {
   font-weight: 700;
   margin-bottom: 50px;
 }
+
+.work-list-item {
+  position: relative;
+}
+
 .work-img {
   width: 370px;
   height: 294px;
 }
+
+.work__text {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 113px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  bottom: 3px;
+}
+
 .work-list {
   display: flex;
   gap: 30px;
