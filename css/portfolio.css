@@ -86,6 +86,17 @@ ol {
 .contact-list-link:hover {
   color: var(--web-studio-blue);
 }
+
+.contacts-email__icon,
+.contacts-tel__icon {
+  fill: #757575;
+  margin-right: 11px;
+}
+.contact-email:hover svg,
+.contact-tel:hover svg {
+  fill: #2196f3;
+}
+
 .main {
   padding: 94px 0;
 }
@@ -146,10 +157,23 @@ ol {
   line-height: 1.9;
   padding: 0 24px 20px;
 }
+
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
 }
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.footer-pages__left {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-logo {
   color: var(--web-studio-blue);
   font-family: "Raleway", sans-serif;
@@ -163,22 +187,48 @@ ol {
 }
 .footer-adress {
   color: var(--web-studio-white);
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.42px;
 }
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.42px;
 }
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.42px;
 }
 .address {
   display: flex;
   flex-direction: column;
   gap: 9px;
+}
+
+.footer-pages__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-social__list {
+  display: flex;
+  gap: 10px;
+}
+.footer-social__item {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social__item:hover {
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.footer__icon {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
 }
