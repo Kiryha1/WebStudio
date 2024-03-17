@@ -37,19 +37,19 @@
         </nav>
         <div class="contact-list">
           <div class="contact-email">
-            <svg class="contacts-email__icon" width="16px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            <a class="contact-list-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="contact-list-link" href="mailto:info@devstudio.com">
+              <svg class="contacts-email__icon" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </div>
           <div class="contact-tel">
-            <svg class="contacts-tel__icon" width="10" height="16">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            <a class="contact-list-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="contact-list-link" href="tel:+380961111111">
+              <svg class="contacts-tel__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </div>
         </div>
@@ -62,7 +62,75 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn button" type="button" data-open-modal>
+            Замовити послугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <form class="modal__form">
+                <h3 class="modal__title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h3>
+                <ul class="modal-form__list">
+                  <li class="modal__item">
+                    <label for="name" class="modal__label">Ім'я</label>
+                    <input type="text" id="name" class="modal__input" />
+                    <svg class="modal__icon">
+                      <use
+                        href="./images/modal/symbol-defs.svg#icon-modal-1"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="modal__item">
+                    <label for="phone" class="modal__label">Телефон</label>
+                    <input type="phone" id="phone" class="modal__input" />
+                    <svg class="modal__icon">
+                      <use
+                        href="./images/modal/symbol-defs.svg#icon-modal-2"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="modal__item">
+                    <label for="email" class="modal__label">Пошта</label>
+                    <input type="email" id="email" class="modal__input" />
+                    <svg class="modal__icon">
+                      <use
+                        href="./images/modal/symbol-defs.svg#icon-modal-3"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="modal__item">
+                    <label for="com" class="modal__label">Коментар</label>
+                    <textarea
+                      name="text"
+                      id="com"
+                      class="modal__com"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </li>
+                </ul>
+                <div class="modal-form__box">
+                  <input type="checkbox" class="modal__checkbox" />
+                  <div class="modal__text">
+                    <p>
+                      Погоджуюся з розсилкою та приймаю
+                      <a class="modal__link" href="#">Умови договору</a>
+                    </p>
+                  </div>
+                </div>
+                <button type="submit" class="hero-btn__submit button">
+                  Відправити
+                </button>
+              </form>
+              <button type="button" class="modal-btn__close" data-close-modal>
+                <svg class="modal-icon__close">
+                  <use
+                    href="./images/modal/symbol-defs.svg#icon-modal-close"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="features">
@@ -322,17 +390,17 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-pages__left">
-        <a class="footer-logo" href="#"
-          >Web<span class="footer-span">Studio</span></a
-        >
-        <address class="address">
-          <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
-          <a class="footer-mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+          <a class="footer-logo" href="#"
+            >Web<span class="footer-span">Studio</span></a
           >
-          <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
-      </div>
+          <address class="address">
+            <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
+            <a class="footer-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </address>
+        </div>
         <div class="footer-pages__right">
           <h3 class="footer-pages__title">приєднуйтесь</h3>
           <ul class="footer-social__list">
@@ -360,5 +428,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/modal.js"></script>
   </body>
 </html>
