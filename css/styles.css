@@ -70,11 +70,11 @@ ol {
 .nav-list-link {
   color: var(--web-studio-black);
   font-weight: 500;
-  transition:  220ms cubic-bezier(0.6, 0, 0.4, 1);
+  transition: 220ms cubic-bezier(0.6, 0, 0.4, 1);
 }
 
-.nav-list-link::after{
-  content: '';
+.nav-list-link::after {
+  content: "";
   background-color: var(--web-studio-blue);
   border-radius: 2px;
   width: 0;
@@ -82,9 +82,9 @@ ol {
   position: absolute;
   top: 45px;
   left: 0;
-  transition:  width 220ms cubic-bezier(0.6, 0, 0.4, 1);
+  transition: width 220ms cubic-bezier(0.6, 0, 0.4, 1);
 }
-.nav-list-link:hover::after{
+.nav-list-link:hover::after {
   width: 100%;
 }
 
@@ -111,6 +111,7 @@ ol {
 .contact-email:hover svg,
 .contact-tel:hover svg {
   fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -187,6 +188,7 @@ ol {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background-color: var(--web-studio-white);
   transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form__list {
@@ -224,6 +226,7 @@ ol {
 
 .modal__input {
   outline: var(--web-studio-blue);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__icon {
@@ -232,6 +235,7 @@ ol {
   left: 14px;
   width: 13px;
   height: 13px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__input:hover,
@@ -249,6 +253,7 @@ ol {
   border: 1px solid rgba(33, 33, 33, 0.2);
   resize: none;
   cursor: text;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__com:hover,
@@ -469,6 +474,8 @@ ol {
 }
 .team-social__icon:hover {
   fill: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brands {
@@ -503,6 +510,8 @@ ol {
 .brands-list__item:hover svg {
   fill: #2196f3;
   cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .brands__icon {
   width: 106px;
