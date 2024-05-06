@@ -8,6 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <title>WebStudio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-aos="zoom-in-up">
       <div class="container">
         <a class="header-logo" href="./index.html"
           >Web<span class="header-span">Studio</span></a
@@ -56,7 +57,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" data-aos="zoom-in-up">
         <div class="container">
           <h1 class="hero-title">
             Ефективні рішення для <br />
@@ -133,7 +134,7 @@
           </div>
         </div>
       </section>
-      <section class="features">
+      <section class="features" data-aos="zoom-in-up">
         <div class="container">
           <ul class="features-list">
             <li class="features-list-item">
@@ -166,7 +167,7 @@
           </ul>
         </div>
       </section>
-      <section class="work">
+      <section class="work" data-aos="zoom-in-up">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
@@ -206,7 +207,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team" data-aos="zoom-in-up">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
@@ -349,7 +350,7 @@
           </ul>
         </div>
       </section>
-      <section class="brands">
+      <section class="brands" data-aos="zoom-in-up">
         <div class="container">
           <h2 class="brands__title">Постійні клієнти</h2>
           <ul class="brands__list">
@@ -387,7 +388,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="zoom-in-up">
       <div class="container">
         <div class="footer-pages__left">
           <a class="footer-logo" href="#"
@@ -429,11 +430,7 @@
         <div class="footer-pages__right">
           <h3 class="footer-pages__title">Підпишіться на розсилку</h3>
           <form class="footer__form">
-            <input
-              type="email"
-              placeholder="E-mail"
-              class="footer__input"
-            />
+            <input type="email" placeholder="E-mail" class="footer__input" />
             <button class="footer__btn" type="submit">
               Підписатися
               <svg class="footer-form__icon">
@@ -445,5 +442,9 @@
       </div>
     </footer>
     <script src="js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
