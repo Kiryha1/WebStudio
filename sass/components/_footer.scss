@@ -15,27 +15,27 @@
   padding-top: 16px;
 }
 
-.footer-logo {
-  color: var(--web-studio-blue);
+.footer__logo {
+  color: getColor("hover");
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   display: block;
   margin-bottom: 20px;
 }
-.footer-span {
-  color: var(--web-studio-white);
+.footer__span {
+  color: getColor("hover");
 }
-.footer-adress {
-  color: var(--web-studio-white);
+.footer__address {
+  color: getColor("hover");
   line-height: 1.7;
 }
-.footer-mail {
+.footer__mail {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
 }
-.footer-tel {
+.footer__tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
@@ -65,7 +65,7 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social__item:hover {
-  background-color: #2196f3;
+  background-color: getColor("hover");
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -98,7 +98,7 @@
 .footer__btn {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: var(--web-studio-blue);
+  background-color: getColor("hover");
   width: 200px;
   height: 50px;
   border: none;
@@ -106,7 +106,7 @@
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
-  color: var(--web-studio-white);
+  color: getColor("white");
 }
 
 .footer-form__icon {

@@ -28,7 +28,7 @@
   padding: 40px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background-color: var(--web-studio-white);
+  background-color: getColor("white");
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -52,7 +52,7 @@
 }
 
 .modal__label {
-  color: #757575;
+  color: getColor("gray");
   font-size: 12px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .modal__input {
-  outline: var(--web-studio-blue);
+  outline: getColor("hover");
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -82,8 +82,8 @@
 
 .modal__input:hover,
 .modal__input:hover + .modal__icon {
-  border-color: var(--web-studio-blue);
-  fill: var(--web-studio-blue);
+  border-color: getColor("hover");
+  fill: getColor("hover");
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -101,8 +101,8 @@
 
 .modal__com:hover,
 .modal__com:focus {
-  border-color: var(--web-studio-blue);
-  outline-color: var(--web-studio-blue);
+  border-color: getColor("hover");
+  outline-color: getColor("hover");
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -115,7 +115,7 @@
 }
 
 .modal__text {
-  color: #757575;
+  color: getColor("gray");
   line-height: 1.71; /* 24/14 */
 }
 
@@ -137,10 +137,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  color: var(--web-studio-white);
+  color: getColor("white");
   border-radius: 2px;
-  outline: 3px solid var(--web-studio-blue);
-  background-color: var(--web-studio-blue);
+  outline: 3px solid getColor("hover");
+  background-color: getColor("hover");
   background-image: url(../images/modal/check.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -148,7 +148,7 @@
 
 .modal__link {
   text-decoration: underline;
-  color: var(--web-studio-blue);
+  color: getColor("hover");
 }
 
 .modal-btn__close {
@@ -158,7 +158,7 @@
   padding: 8px 11px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
-  background-color: var(--web-studio-white);
+  background-color: getColor("white");
 }
 
 .modal-icon__close {
@@ -167,6 +167,6 @@
 }
 
 .modal-icon__close:hover {
-  fill: var(--web-studio-blue);
+  fill: getColor("hover");
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
