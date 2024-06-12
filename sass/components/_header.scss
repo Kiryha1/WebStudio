@@ -1,11 +1,13 @@
 .header  {
-  @extend %flex-center;
+  display: flex;
   padding: 24px 0 25px;
   &__span--studio {
   color: getColor("black");
 }
   & .container {
-    @extend %flex-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .logo {
