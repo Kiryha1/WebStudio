@@ -1,75 +1,82 @@
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header {
+.header  {
+  @extend %flex-center;
   padding: 24px 0 25px;
-  border-bottom: 1px solid #ececec;
+  &__span--studio {
+  color: getColor("black");
 }
-.header__logo {
+  & .container {
+    @extend %flex-center;
+  }
+}
+.logo {
   color: getColor("hover");
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
   font-weight: 700;
-}
-.header__span {
-  color: getColor("black");
+  font-size: 26px;
 }
 .nav-list {
   display: flex;
   align-items: center;
   gap: 50px;
-}
-
-.nav-list__item {
+  &__item {
   position: relative;
 }
-
-.nav-list__link {
+&__link {
   color: getColor("black");
   font-weight: 500;
   transition: 220ms cubic-bezier(0.6, 0, 0.4, 1);
-}
-
-.nav-list__link::after {
-  content: "";
-  background-color: getColor("hover");
-  border-radius: 2px;
-  width: 0;
-  height: 4px;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  transition: width 220ms cubic-bezier(0.6, 0, 0.4, 1);
-}
-.nav-list__link:hover::after {
+  &:hover {
+    color: getColor("hover");
+  }
+  &::after {
+    content: "";
+    background-color: getColor("hover");
+    border-radius: 2px;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transition: width 220ms cubic-bezier(0.6, 0, 0.4, 1);
+  }
+  &:hover::after {
   width: 100%;
 }
+}
+}
 
-.nav-list__link:hover {
-  color: getColor("hover");
-}
-.contact-list {
+.contact {
   display: flex;
-  gap: 50px;
-}
-.contact-social__link {
+  gap: 49px;
+  &__link {
   color: getColor("gray");
   font-weight: 500;
-}
-.contact-social__link:hover {
+  &:hover svg {
+  fill: getColor("hover");
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover {
   color: getColor("hover");
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-email__icon,
-.contact-tel__icon {
+}
+&__icon {
   fill: getColor("gray");
   margin-right: 11px;
 }
+&__icon--email {
+  width: 16px;
+  height: 12px;
+}
+&__icon--phone {
+  width: 16px;
+  height: 12px;
+}
+}
+
 .contact-email:hover svg,
 .contact-tel:hover svg {
   fill: getColor("hover");
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+

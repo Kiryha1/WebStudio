@@ -20,56 +20,51 @@
   <body>
     <header class="header" data-aos="zoom-in-up">
       <div class="container">
-        <a class="header-logo" href="./index.html"
-          >Web<span class="header-span">Studio</span></a
-        >
+          <a class="header__logo logo" href="./index.html"
+            >Web<span class="header__span header__span--studio">Studio</span></a
+          >
         <nav class="navigation">
           <ul class="nav-list">
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="./index.html">Студія</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./index.html">Студія</a>
             </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="./portfolio.html">Портфоліо</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">Контакти</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <div class="contact-list">
-          <div class="contact-email">
-            <svg class="contacts-email__icon" width="16px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            <a class="contact-list-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+        <div class="contact">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon contact__icon--email">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
-          </div>
-          <div class="contact-tel">
-            <svg class="contacts-tel__icon" width="10" height="16">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            <a class="contact-list-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__icon contact__icon--phone">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
-          </div>
         </div>
-      </div>
     </header>
     <main class="main" data-aos="zoom-in-up">
       <div class="container">
         <button class="main-btn" type="button">Усі</button>
         <button class="main-btn" type="button">Веб-сайти</button>
         <button class="main-btn" type="button">Додатки</button>
-        <button class="main-btn" type="button">Дизайн</button
-        ><button class="main-btn" type="button">Маркетинг</button>
+        <button class="main-btn" type="button">Дизайн</button>
+        <button class="main-btn" type="button">Маркетинг</button>
       </div>
       <div class="container">
         <ul class="main-list">
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Технокряк.jpg"
                 alt="Технокряк"
               />
@@ -81,13 +76,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Технокряк</h4>
-            <p class="list-text">Веб-сайт</p>
+            <h4 class="main-list__title">Технокряк</h4>
+            <p class="main-list__text">Веб-сайт</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/NewOrlea.jpg"
                 alt="Технокряк"
               />
@@ -99,13 +94,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Постер New Orlean vs Golden Star</h4>
-            <p class="list-text">Дизайн</p>
+            <h4 class="main-list__title">Постер New Orlean vs Golden Star</h4>
+            <p class="main-list__text">Дизайн</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Seafood.jpg"
                 alt="Технокряк"
               />
@@ -117,13 +112,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Ресторан Seafood</h4>
-            <p class="list-text">Додаток</p>
+            <h4 class="main-list__title">Ресторан Seafood</h4>
+            <p class="main-list__text">Додаток</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Prime.jpg"
                 alt="Технокряк"
               />
@@ -135,13 +130,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Проєкт Prime</h4>
-            <p class="list-text">Маркетинг</p>
+            <h4 class="main-list__title">Проєкт Prime</h4>
+            <p class="main-list__text">Маркетинг</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Boxes.jpg"
                 alt="Технокряк"
               />
@@ -153,13 +148,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Проєкт Boxes</h4>
-            <p class="list-text">Додаток</p>
+            <h4 class="main-list__title">Проєкт Boxes</h4>
+            <p class="main-list__text">Додаток</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Inspiration.jpg"
                 alt="Технокряк"
               />
@@ -171,13 +166,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Inspiration has no Borders</h4>
-            <p class="list-text">Веб-сайт</p>
+            <h4 class="main-list__title">Inspiration has no Borders</h4>
+            <p class="main-list__text">Веб-сайт</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Limited.jpg"
                 alt="Технокряк"
               />
@@ -189,13 +184,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Видання Limited Edition</h4>
-            <p class="list-text">Дизайн</p>
+            <h4 class="main-list__title">Видання Limited Edition</h4>
+            <p class="main-list__text">Дизайн</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Lab.jpg"
                 alt="Технокряк"
               />
@@ -207,13 +202,13 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Проєкт LAB</h4>
-            <p class="list-text">Маркетинг</p>
+            <h4 class="main-list__title">Проєкт LAB</h4>
+            <p class="main-list__text">Маркетинг</p>
           </li>
-          <li class="main-list-item">
+          <li class="main-list__item">
             <div class="thumb">
               <img
-                class="list-img"
+                class="main-list__img"
                 src="./images/portfolio/Growing.jpg"
                 alt="Технокряк"
               />
@@ -225,63 +220,70 @@
                 </p>
               </div>
             </div>
-            <h4 class="list-title">Growing Business</h4>
-            <p class="list-text">Додаток</p>
+            <h4 class="main-list__title">Growing Business</h4>
+            <p class="main-list__text">Додаток</p>
           </li>
         </ul>
       </div>
     </main>
     <footer class="footer" data-aos="zoom-in-up">
       <div class="container">
-        <div class="footer-pages__left">
-          <a class="footer-logo" href="#"
-            >Web<span class="footer-span">Studio</span></a
+        <section class="footer-contacts">
+          <a class="footer-contacts__logo logo" href="#"
+            >Web<span class="footer-contacts__logo footer-contacts__logo--studio">Studio</span></a
           >
           <address class="address">
-            <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
-            <a class="footer-mail" href="mailto:info@devstudio.com"
+            <p class="address__city">м. Київ, пр-т Лесі Українки, 26</p>
+            <a class="address__contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="address__contact" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </address>
-        </div>
-        <div class="footer-pages__center">
-          <h3 class="footer-pages__title">приєднуйтесь</h3>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <svg class="footer__icon">
+        </section>
+        <section class="footer-social">
+          <h3 class="footer-social__title">приєднуйтесь</h3>
+          <ul class="networks-list">
+            <li class="networks-list__item">
+              <a href="#" class="networks-list__link networks-list__link--footer"></a>
+              <svg class="networks-list__icon networks-list__icon--footer" style="fill: #fff">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </li>
-            <li class="footer-social__item">
-              <svg class="footer__icon">
+            <li class="networks-list__item">
+              <a href="#" class="networks-list__link networks-list__link--footer"></a>
+              <svg class="networks-list__icon networks-list__icon--footer" style="fill: #fff">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </li>
-            <li class="footer-social__item">
-              <svg class="footer__icon">
+            <li class="networks-list__item">
+              <a href="#" class="networks-list__link networks-list__link--footer"></a>
+              <svg class="networks-list__icon networks-list__icon--footer" style="fill: #fff">
                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </li>
-            <li class="footer-social__item">
-              <svg class="footer__icon">
+            <li class="networks-list__item">
+              <a href="#" class="networks-list__link networks-list__link--footer"></a>
+              <svg class="networks-list__icon networks-list__icon--footer" style="fill: #fff">
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
-        </div>
-        <div class="footer-pages__right">
-          <h3 class="footer-pages__title">Підпишіться на розсилку</h3>
-          <form class="footer__form">
-            <input type="email" placeholder="E-mail" class="footer__input" />
-            <button class="footer__btn" type="submit">
+        </section>
+        <section class="footer-subscribe">
+          <form class="footer-form">
+            <label class="footer-form__label">Підпишіться на розсилку
+            <input type="email" placeholder="E-mail" class="footer-form__input"/>
+            </label>
+            <button class="footer-form__btn button" type="submit">
               Підписатися
               <svg class="footer-form__icon">
                 <use href="./images/svg/send.svg"></use>
               </svg>
             </button>
           </form>
-        </div>
+        </section>
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

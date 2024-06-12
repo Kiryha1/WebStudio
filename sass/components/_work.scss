@@ -1,24 +1,25 @@
 .work {
   padding-bottom: 94px;
-}
-.work__title {
+  &__title {
   color: getColor("black");
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
 }
-
-.work-list__item {
+}
+.work-list {
+  display: flex;
+  gap: 30px;
+  &__item {
   position: relative;
 }
-
-.work__img {
+&__img {
   width: 370px;
   height: 294px;
 }
 
-.work__text {
+&__text {
   width: 100%;
   font-weight: 700;
   font-size: 14px;
@@ -31,8 +32,11 @@
   position: absolute;
   bottom: 3px;
 }
-
-.work-list {
-  display: flex;
-  gap: 30px;
 }
+
+
+
+
+
+
+
