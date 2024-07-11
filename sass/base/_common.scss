@@ -1,6 +1,7 @@
 body {
-  color: getColor("black");
-  font-family: "Roboto", sans-serif;
+  color: getColor('black');
+  background-color: getColor('white');
+  font-family: getFont('Roboto');
   font-size: 14px;
   font-style: normal;
   line-height: normal;
@@ -8,15 +9,21 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 767px;
+  min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
-button {
-  cursor: pointer;
-  transition-duration: 250ms;
-  &:hover {
-    transform: scale(1.05);
-  }
+.header, .main, .footer {
+  min-width: 320px;
 }

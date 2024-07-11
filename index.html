@@ -20,10 +20,11 @@
   <body>
     <header class="header" data-aos="zoom-in-up">
       <div class="container">
-          <a class="header__logo logo" href="./index.html"
-            >Web<span class="header__span header__span--studio">Studio</span></a
+        <div class="header-spacer">
+          <a class="logo header-spacer__logo" href="./index.html"
+            >Web<span class="header-spacer__logo header-spacer__logo--studio">Studio</span></a
           >
-        <nav class="navigation">
+        <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="./index.html">Студія</a>
@@ -36,15 +37,16 @@
             </li>
           </ul>
         </nav>
-        <div class="contact">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon contact__icon--email">
+      </div>
+        <div class="header-contact">
+            <a class="header-contact__link" href="mailto:info@devstudio.com">
+              <svg class="header-contact__icon header-contact__icon--email">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
-            <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__icon contact__icon--phone">
+            <a class="header-contact__link" href="tel:+380961111111">
+              <svg class="header-contact__icon header-contact__icon--phone">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -53,6 +55,7 @@
     </header>
     <main class="main">
       <section class="hero" data-aos="zoom-in-up">
+        <div class="her__overlay">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для <br />
@@ -62,6 +65,7 @@
             Замовити послугу
           </button>
         </div>
+      </div>
       </section>
       <section class="features" data-aos="zoom-in-up">
         <div class="container">
@@ -107,9 +111,6 @@
                 alt="coding"
                 width="370"
               />
-              <div class="work-list__text">
-                <p>Десктопні додатки</p>
-              </div>
             </li>
             <li class="work-list__item">
               <img
@@ -118,9 +119,6 @@
                 alt="working"
                 width="370"
               />
-              <div class="work-list__text">
-                <p>Мобільні додатки</p>
-              </div>
             </li>
             <li class="work-list__item">
               <img
@@ -129,9 +127,6 @@
                 alt="designing"
                 width="370"
               />
-              <div class="work-list__text">
-                <p>Дизайнерські рішення</p>
-              </div>
             </li>
           </ul>
         </div>

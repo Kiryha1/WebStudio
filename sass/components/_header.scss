@@ -1,83 +1,159 @@
-.header  {
-  @extend %flex-center;
-  padding: 24px 0 25px;
-  &__span--studio {
-  color: getColor("black");
-}
-  & .container {
-    @extend %flex-center;
-    justify-content: space-between;
+.header {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: 768px) {
+    padding: 21 0px;
+  }
+  @media (min-width: 1200px) {
+    padding: 26 0px;
   }
 }
+
+.header .container {
+  @include flex(space-between);
+}
+
+.header-spacer {
+  @include flex(space-between);
+
+  @media (min-width: 768px) {
+    gap: 88px;
+  }
+  @media (min-width: 1200px) {
+    gap: 92px;
+  }
+
+  &__logo {
+    animation: changeColWebHeader 2s ease infinite alternate forwards;
+    &--studio {
+      animation: changeColStudioHeader 2s ease infinite alternate forwards;
+    }
+  }
+}
+
 .logo {
-  color: getColor("hover");
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+  display: block;
+  font-family: getFont("Raleway");
+  @include text(24px, 700);
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
+
+@keyframes changeColWebHeader {
+  0% {
+    color: getColor("main-accent");
+  }
+  100% {
+    color: getColor("black");
+  }
+}
+@keyframes changeColStudioHeader {
+  0% {
+    color: getColor("black");
+  }
+  100% {
+    color: getColor("main-accent");
+  }
+}
+
+.header-nav,
+.header-contact {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
 .nav-list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  @media (min-width: 768px) {
+    @include flex(space-between);
+    gap: 50px;
+  }
+
   &__item {
-  position: relative;
-}
-&__link {
-  color: getColor("black");
-  font-weight: 500;
-  transition: 220ms cubic-bezier(0.6, 0, 0.4, 1);
-  &:hover {
-    color: getColor("hover");
+    position: relative;
   }
-  &::after {
-    content: "";
-    background-color: getColor("hover");
-    border-radius: 2px;
-    width: 0;
-    height: 4px;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    transition: width 220ms cubic-bezier(0.6, 0, 0.4, 1);
-  }
-  &:hover::after {
-  width: 100%;
-}
-}
-}
 
-.contact {
-  display: flex;
-  gap: 49px;
   &__link {
-  color: getColor("gray");
-  font-weight: 500;
-  &:hover svg {
-  fill: getColor("hover");
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (min-width: 768px) {
+      color: getColor("main-title");
+      @include text(14px, 500, normal, 0.02em);
+      transition: 220ms cubic-bezier(0.6, 0, 0.4, 1);
+      &:hover {
+        color: getColor("main-accent");
+      }
+      &::after {
+        content: "";
+        background-color: getColor("main-accent");
+        border-radius: 2px;
+        width: 0;
+        height: 4px;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        transition: width 220ms cubic-bezier(0.6, 0, 0.4, 1);
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
   }
-  &:hover {
-  color: getColor("hover");
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-}
-&__icon {
-  fill: getColor("gray");
-  margin-right: 11px;
-}
-&__icon--email {
-  width: 16px;
-  height: 12px;
-}
-&__icon--phone {
-  width: 16px;
-  height: 12px;
-}
 }
 
-.contact-email:hover svg,
-.contact-tel:hover svg {
-  fill: getColor("hover");
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.header-contact {
+  @media (min-width: 768px) {
+    @include flex(center, flex-start, column);
+    gap: 10px;
+  }
+  @media (min-width: 1200px) {
+    @include flex(center);
+    gap: 30px;
+  }
+  &__link {
+    @media (min-width: 768px) {
+      @include flex(center);
+      gap: 10px;
+      @include text(14px, 500, normal, 0.02em);
 
+      color: getColor("main-text");
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: getColor("main-accent");
+      }
+    }
+  }
+  &__icon {
+    @media (min-width: 768px) {
+      fill: getColor("main-text");
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &--email {
+        width: 14px;
+        height: 10px;
+      }
+      &--phone {
+        width: 14px;
+        height: 12px;
+      }
+    }
+    @media (min-width: 1200px) {
+      &--email {
+        width: 16px;
+        height: 12px;
+      }
+      &--phone {
+        width: 16px;
+        height: 12px;
+      }
+    }
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: getColor("main-accent");
+  }
+}

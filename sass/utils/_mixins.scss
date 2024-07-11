@@ -1,7 +1,31 @@
-@mixin text($fontS: 14px, $fontW: 400, $lineH: normal, $letterS: 0.03em, $textA: center){
-  font-weight: $fontW;
-  font-size: $fontS;
-  line-height: $lineH;
-  letter-spacing: $letterS;
-  text-align: $textA;
+@mixin text($f-size:14px, $f-weight:400, $l-height:normal, $ltr-spacing:0.03em, $t-align:left, $transf:none, $t-dec:none, $f-style:normal) {
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $l-height;
+  letter-spacing: $ltr-spacing;
+  text-align: $t-align;
+  text-transform: $transf;
+  text-decoration: $t-dec;
+  font-style: $f-style;
+}
+
+@mixin flex($j-content:flex-start, $al-items:center, $f-dir:row) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $j-content;
+  align-items: $al-items;
+  flex-direction: $f-dir;
+}
+
+@mixin btn($width:200px, $height:50px) {
+  width: $width;
+  height: $height;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  font-family: getFont('Roboto');
+  background-color: getColor('main-accent');
+  color: getColor('white');
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
